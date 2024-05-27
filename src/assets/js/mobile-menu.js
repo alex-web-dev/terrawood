@@ -12,7 +12,6 @@ if ($menu) {
     $menuToggle.classList.toggle("menu-toggle--active");
     document.body.classList.toggle("body--lock");
     animate = true;
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 
     if ($menu.classList.contains('mobile-menu--show')) {
       $menu.classList.remove("mobile-menu--show");
@@ -31,6 +30,10 @@ if ($menu) {
 
   $links.forEach($link => {
     $link.addEventListener('click', () => {
+      if ($link.classList.contains('mobile-menu__link--static')) {
+        return;
+      }
+      
       $menu.classList.remove("mobile-menu--active");
       $menuToggle.classList.remove("menu-toggle--active");
       document.body.classList.remove("body--lock");

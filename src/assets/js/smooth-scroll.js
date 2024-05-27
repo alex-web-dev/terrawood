@@ -2,7 +2,7 @@ const $anchors = document.querySelectorAll('a[href*="#"]');
 $anchors.forEach($anchor => {
   $anchor.addEventListener('click', e => {
     const id = $anchor.getAttribute('href');
-    const headerBottomHeight = document.querySelector('.header__bottom').offsetHeight;
+    const headerHeight = document.querySelector('.header').offsetHeight;
 
     if (id[0] === '#') {
       e.preventDefault();
@@ -14,7 +14,7 @@ $anchors.forEach($anchor => {
 
     const $elem = document.querySelector(id);
     if ($elem) {
-      const offsetTop = $elem.getBoundingClientRect().top - headerBottomHeight;
+      const offsetTop = $elem.getBoundingClientRect().top - headerHeight;
       window.scrollBy({ top: (offsetTop), left: 0, behavior: 'smooth' });
     }
   });
