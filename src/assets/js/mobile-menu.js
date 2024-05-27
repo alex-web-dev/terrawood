@@ -28,7 +28,6 @@ if ($menu) {
   });
 
   const $links = $menu.querySelectorAll('.mobile-menu__link');
-  console.log($links);
 
   $links.forEach($link => {
     $link.addEventListener('click', () => {

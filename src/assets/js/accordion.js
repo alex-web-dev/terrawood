@@ -18,7 +18,7 @@ $accordions.forEach(($accordion) => {
     if (!$accordion.classList.contains("accordion--active")) {
       $btn.classList.add("accordion__btn--active");
       $accordion.classList.add("accordion--activating");
-      setTimeout(() => $content.style.height = `${$main.getBoundingClientRect().height}px`, 30);
+      setTimeout(() => $content.style.height = `${$main.getBoundingClientRect().height}px`, 50);
     } else {
       $btn.classList.remove("accordion__btn--active");
       $content.style.height = `${$content.scrollHeight}px`;
