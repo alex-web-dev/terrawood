@@ -1,0 +1,45 @@
+.features {
+  &__title {
+    margin: 0 auto 30px;
+    max-width: 790px;
+  }
+
+  &__list {
+    margin: -32px -16px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 32px 16px 0;
+    width: calc(50% - 32px);
+  }
+
+  @media (max-width: 1140px) {
+    &__list {
+      margin: -20px -10px 0;
+    }
+
+    &__item {
+      margin: 20px 10px 0;
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__title {
+      max-width: 630px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__list {
+      margin-top: -10px;
+    }
+    
+    &__item {
+      margin-top: 10px;
+      width: calc(100% - 20px);
+    }
+  }
+}

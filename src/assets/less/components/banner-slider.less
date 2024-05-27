@@ -1,0 +1,67 @@
+.banner-slider {
+  position: relative;
+  min-width: 0;
+  border-radius: 15px;
+  overflow: hidden;
+
+  &__navigation {
+    position: absolute;
+    z-index: 2;
+    left: 38px;
+    bottom: 28px;
+    display: flex;
+  }
+
+  &__navigation-right {
+    margin-left: 6px;
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__slide {
+    height: auto;
+    min-height: 516px;
+  }
+
+  @media (max-width: 1140px) {
+    &__slide {
+      min-height: 418px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__slide {
+      min-height: 358px;
+    }
+
+    &__navigation {
+      left: 28px;
+      bottom: 18px;
+    }
+
+    &__pagination {
+      bottom: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    border-radius: 12px;
+    
+    &__slide {
+      min-height: 270px;
+    }
+
+    &__navigation {
+      display: none;
+    }
+
+    &__pagination {
+      bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.select {
+  &__field {
+    display: none;
+  }
+
+  &__error {
+    margin-top: 5px;
+    display: none;
+    font-size: 14px;
+    color: @color-danger;
+  }
+
+  &--px-lg .simple-select__field {
+    padding-left: 24px;
+  }
+
+  &--py-xl .simple-select__field {
+    padding-top: 23px;
+    padding-bottom: 22px;
+  }
+
+  &--white .simple-select__field {
+    background-color: #fff;
+    border: 1px solid transparent;
+
+    &--active {
+      border-color: @color-primary;
+      border-bottom-color: transparent;
+    }
+  }
+
+  &--round .simple-select__field {
+    border-radius: 20px;
+
+    &--active {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &--text-sm .simple-select__field {
+    font-size: 15px;
+  }
+
+  &--text-sm .simple-select__item {
+    font-size: 14px;
+  }
+
+  &--ph-dark .simple-select__field {
+    &--placeholder {
+      color: #261100;
+    }
+  }
+
+  &--error &__error {
+    display: block;
+  }
+
+  &--error .simple-select__field {
+    border-color: @color-danger;
+  }
+
+  @media (max-width: 767px) {
+    &--py-xl .simple-select__field {
+      padding-top: 17px;
+      padding-bottom: 18px;
+    }
+  }
+}

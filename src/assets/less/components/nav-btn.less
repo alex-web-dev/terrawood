@@ -1,0 +1,45 @@
+.nav-btn {
+	position: relative;
+	padding-bottom: 15px;
+	font-size: 34px;
+	color: #646464;
+
+	&.tabs-btns__btn--active {
+		color: #000;
+		cursor: default;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: calc(100% - 10px);
+			height: 1px;
+			background-color: @color-primary-light;
+		}
+	}
+
+	@media (max-width: 1260px) {
+		padding-bottom: 12px;
+		font-size: 30px;
+	}
+
+	@media (max-width: 991px) {
+		padding-bottom: 10px;
+		font-size: 26px;
+	}
+
+	@media (max-width: 767px) {
+		padding-bottom: 8px;
+		font-size: 18px;
+
+		&.tabs-btns__btn--active {
+			color: #000;
+			cursor: default;
+	
+			&:before {
+				width: calc(100% - 5px);
+			}
+		}
+	}
+}

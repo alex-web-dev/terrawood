@@ -1,0 +1,160 @@
+.header {
+  position: relative;
+  z-index: 8;
+
+  &__top {
+    position: relative;
+    z-index: 3;
+    background-color: #f5f5f5;
+  }
+
+  &__top-content {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__address {
+    position: relative;
+
+    &:not(:last-child) {
+      padding-right: 22px;
+      margin-right: 22px;
+      
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 16px;
+        background-color: #d9d9d9;
+      }
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    z-index: 2;
+    padding: 20px 0 23px;
+    box-shadow: 0px 2px 12px rgba(81, 81, 81, 0.12);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+  }
+
+  &__bottom-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    flex: 0 0 auto;
+  }
+
+  &__menu {
+    margin-left: 44px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__phone {
+    margin-left: auto;
+    flex: 0 0 auto;
+
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
+
+  &__btn {
+    flex: 0 0 auto;
+    width: 203px;
+  }
+
+  &__catalog {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  @media (max-width: 1260px) {
+    &__logo {
+      width: 180px;
+    }
+
+    &__menu {
+      margin-left: 30px;
+    }
+
+    &__phone {
+      font-size: 16px;
+    }
+
+    &__phone-icon {
+      width: 22px;
+    }
+
+    &__btn {
+      width: 175px;
+    }
+  }
+
+  @media (max-width: 1090px) {
+    &__bottom {
+      padding: 18px 0;
+    }
+
+    &__phone {
+      display: none;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    &__menu {
+      margin-left: auto;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__top-content {
+      justify-content: flex-start;
+    }
+
+    &__address {
+      font-size: 14px;
+      line-height: 1.4;
+
+      &:after {
+        display: none;
+      }
+
+      &:not(:last-child) {
+        padding-right: 0;
+        margin-right: 25px;
+      }
+    }
+
+    &__lang {
+      margin-left: auto;
+    }
+
+    &__bottom {
+      padding: 10px 0;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+  }
+}

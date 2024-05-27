@@ -1,0 +1,88 @@
+.tape-message {
+  position: relative;
+  background: #E5B532;
+  padding: 10px 28px;
+  height: 68px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 12px;
+    z-index: -1;
+    .pseudo-icon('../img/icons/tape-part.svg', 38px, 64px);
+  }
+
+  &:before {
+    left: -28px;
+    transform: scale(-1, 1);
+  }
+
+  &:after {
+    right: -28px;
+  }
+
+  @media (max-width: 1260px) {
+    font-size: 32px;
+
+    &:before,
+    &:after {
+      width: 36px;
+      height: 60px;
+    }
+
+    &:before {
+      left: -26px;
+      transform: scale(-1, 1);
+    }
+  
+    &:after {
+      right: -26px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    font-size: 28px;
+    height: 58px;
+
+    &:before,
+    &:after {
+      width: 32px;
+      height: 53px;
+    }
+
+    &:before {
+      left: -22px;
+    }
+  
+    &:after {
+      right: -22px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+    height: 52px;
+
+    &:before,
+    &:after {
+      width: 28px;
+      height: 46px;
+    }
+
+    &:before {
+      left: -18px;
+    }
+  
+    &:after {
+      right: -18px;
+    }
+  }
+}

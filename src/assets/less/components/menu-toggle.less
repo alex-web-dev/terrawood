@@ -1,0 +1,45 @@
+.menu-toggle {
+  &__lines {
+    position: relative;
+    z-index: 6;
+
+    &,
+    &:before,
+    &:after {
+      height: 2px;
+      border-radius: 2px;
+      background-color: @color-primary;
+      display: block;
+      transform: rotate(0);
+      width: 24px;
+      transition: transform 0.3s, width 0.3s;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+    }
+
+    &:before {
+      transform: translateY(-8px);
+    }
+
+    &:after {
+      transform: translateY(8px);
+    }
+  }
+  
+  &--active &__lines {
+    height: 0;
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+}

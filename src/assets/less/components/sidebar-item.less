@@ -1,0 +1,61 @@
+.sidebar-item {
+  &__btn {
+    padding: 16px 0;
+    border-bottom: 1px solid #e9e9e9;
+    width: 100%;
+    display: flex;
+    color: @color-primary;
+    font-family: 'HelveticaNeue', sans-serif;
+    line-height: 1.4;
+    font-weight: 700;
+
+    &-icon {
+      margin-top: 1px;
+      margin-right: 16px;
+    }
+
+    &.accordion__btn--active &-icon {
+      &:before {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+
+      &:after {
+        height: 0;
+      }
+    }
+  }
+
+  &:first-child &__btn {
+    padding-top: 0;
+  }
+
+  &:last-child &__btn {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  &__main {
+    padding: 16px 0 23px 23px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+
+  &__elem {
+    &:not(:first-child) {
+      padding-top: 12px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__main {
+      padding: 12px 0 16px 16px
+    }
+
+    &__btn {
+      padding: 16px 12px;
+
+      &-icon {
+        margin-right: 12px;
+      }
+    }
+  }
+}

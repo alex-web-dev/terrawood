@@ -1,0 +1,39 @@
+.nav-btns {
+	&__list {
+		padding-bottom: 7px;
+		display: flex;
+		overflow-x: auto;
+	}
+
+	&__btn {
+		flex: 0 0 auto;
+
+		&:not(:first-child) {
+			margin-left: 94px;
+		}
+	}
+
+	@media (max-width: 1260px) {
+		&__btn {
+			&:not(:first-child) {
+				margin-left: 60px;
+			}
+		}
+	}
+
+	@media (max-width: 991px) {
+		&__btn {
+			&:not(:first-child) {
+				margin-left: 40px;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		&__btn {
+			&:not(:first-child) {
+				margin-left: 20px;
+			}
+		}
+	}
+}

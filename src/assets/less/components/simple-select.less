@@ -1,0 +1,89 @@
+.simple-select {
+  position: relative;
+  user-select: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__field {
+    position: relative;
+    z-index: 2;
+    padding: 16px 36px 15px 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid @color-primary;
+    line-height: 1.2;
+    color: #261100;
+    
+    &--placeholder {
+      color: #7e7e7e;
+    }
+
+    &:after {
+      .pseudo-icon("../img/icons/down-triangle-round-dark.svg", 16px, 9px);
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      transform: translateY(-50%);
+    }
+
+    &--active {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-color: @color-primary;
+      border-bottom-color: transparent;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    display: none;
+    width: 100%;
+    max-height: 245px;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid @color-primary;
+    border-top: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__item {
+    padding: 8px 18px;
+    font-size: 15px;
+    line-height: 1.35;
+    transition: background-color 0.1s;
+    cursor: pointer;
+
+    &--placeholder {
+      display: none;
+    }
+
+    &--hover {
+      background-color: #f3f3f3;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__list {
+      max-height: 210px;
+    }
+
+    &__field {
+      font-size: 15px;
+    }
+  }
+}

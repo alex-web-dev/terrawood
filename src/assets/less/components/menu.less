@@ -1,0 +1,55 @@
+.menu {
+  &__list {
+    margin: -8px -15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 8px 15px 0;
+  }
+
+  &__link {
+    &.js-catalog-menu-opened {
+      color: @color-primary;
+    }
+  }
+
+  &__item--has-children &__link {
+    &:after {
+      margin-top: 4px;
+      margin-left: 4px;
+      .pseudo-icon('../img/icons/down-triangle-gray.svg', 10px, 5px);
+    }
+  }
+
+  &__toggle {
+    height: 24px;
+    display: none;
+  }
+
+  @media (max-width: 1260px) {
+    &__list {
+      margin: -8px -10px 0;
+    }
+
+    &__item {
+      margin: 8px 10px 0;
+    }
+
+    &__link {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 1090px) {
+    &__list {
+      display: none;
+    }
+
+    &__toggle {
+      display: block;
+    }
+  }
+}
