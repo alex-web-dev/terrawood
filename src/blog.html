@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <title>TerraWood - Блог</title>
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-content">
+            <nav class="menu header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="link link--iflex link--sm menu__link" href="#">О компании</a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--iflex link--sm menu__link" href="index.html#calculate">Калькулятор цен</a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--iflex link--sm menu__link" href="blog.html">Блог</a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--iflex link--sm menu__link" href="#footer">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="text text--iflex text--sm text--dark-500 text--line header__address">
+              <img class="text__icon" src="assets/img/icons/location.svg" alt="" />
+              <span>пр. Мангилик ел 40, офис 14</span>
+            </div>
+            <div class="lang-dropdown dropdown header__lang">
+              <button class="lang-dropdown__btn dropdown__btn">
+                <img class="lang-dropdown__btn-icon" src="assets/img/icons/web.svg" alt="" />
+                <span>RU</span>
+              </button>
+              <div class="lang-dropdown__main dropdown__main">
+                <span class="lang-dropdown__main-btn lang-dropdown__main-btn--active">RU</span>
+                <a class="lang-dropdown__main-btn" href="#">EN</a>
+                <a class="lang-dropdown__main-btn" href="#">KZ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-content">
+            <button class="btn-catalog header__btn-catalog js-open-catalog-menu">
+              <span class="btn-catalog__lines"></span>
+            </button>
+            <a href="index.html" class="logo header__logo">
+              <img class="logo__img" src="assets/img/logo.png" alt="" />
+            </a>
+            <form class="search-form header__search" method="get" autocomplete="off">
+              <div class="search-form__field">
+                <button class="search-form__btn" type="submit">
+                  <img src="assets/img/icons/search-gray-dark.svg" alt="" />
+                </button>
+                <input class="search-form__input" type="text" placeholder="Что хотите найти?" />
+                <button class="search-form__close" type="button">
+                  <img src="assets/img/icons/exit-small-gray.svg" alt="" />
+                </button>
+              </div>
+            </form>
+            <a class="link link--iflex link--lg link--bold header__phone" href="tel:87777764000">
+              <img class="link__icon header__phone-icon" src="assets/img/icons/phone.svg" alt="" />
+              <span>8 (777) 776 40 00</span>
+            </a>
+            <button class="btn btn--py-sm btn--px-xs btn--text-sm header__btn js-open-popup" data-popup-name="callback">
+              Узнать стоимость
+            </button>
+            <button class="menu-toggle header__menu-toggle">
+              <span class="menu-toggle__lines"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-menu header__catalog">
+        <div class="catalog-menu__body">
+          <div class="container catalog-menu__container">
+            <div class="catalog-menu__content">
+              <div class="catalog-menu__lists-box">
+                <div class="catalog-menu__lists">
+                  <div class="submenu-list catalog-menu__list">
+                    <div class="text text--iflex text--xl text--bold text--dark-700 submenu-list__title">
+                      <img class="text__icon text__icon--mx-sm submenu-list__title-icon" src="assets/img/catalog-menu/1.svg" alt="" />
+                      <span>Двери</span>
+                    </div>
+                    <ul class="submenu-list__main">
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Входные двери</a>
+                      </li>
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Межкомнатные двери</a>
+                      </li>
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Раздвижные межкомнатные перегородки</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="submenu-list catalog-menu__list">
+                    <div class="text text--iflex text--xl text--bold text--dark-700 submenu-list__title">
+                      <img class="text__icon text__icon--mx-sm submenu-list__title-icon" src="assets/img/catalog-menu/2.svg" alt="" />
+                      <span>Окна</span>
+                    </div>
+                    <ul class="submenu-list__main">
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Деревянные окна</a>
+                      </li>
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Дерево-алюминиевые окна</a>
+                      </li>
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Зимние сады</a>
+                      </li>
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Раздвижные системы</a>
+                      </li>
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Стоечно-ригельная система</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="submenu-list catalog-menu__list">
+                    <div class="text text--iflex text--xl text--bold text--dark-700 submenu-list__title">
+                      <img class="text__icon text__icon--mx-sm submenu-list__title-icon" src="assets/img/catalog-menu/3.svg" alt="" />
+                      <span>Напольные покрытия</span>
+                    </div>
+                    <ul class="submenu-list__main">
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Паркет</a>
+                      </li>
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Террасная доска</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="submenu-list catalog-menu__list">
+                    <div class="text text--iflex text--xl text--bold text--dark-700 submenu-list__title">
+                      <img class="text__icon text__icon--mx-sm submenu-list__title-icon" src="assets/img/catalog-menu/4.svg" alt="" />
+                      <span>Столярные изделия</span>
+                    </div>
+                    <ul class="submenu-list__main">
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Кабинет</a>
+                      </li>
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Гостинная</a>
+                      </li>
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Спальня</a>
+                      </li>
+                      <li class="submenu-list__item">
+                        <a class="link link--lg submenu-list__link" href="#">Кухня</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-menu__categories">
+                <div class="text text--xl text--upper text--bold catalog-menu__categories-title">Популярные товары</div>
+                <div class="catalog-menu__categories-list">
+                  <div class="category-card catalog-menu__categories-item">
+                    <a class="category-card__img category-card__img--sm" href="product-card.html">
+                      <img src="assets/img/categories/4.jpg" alt="" />
+                    </a>
+                    <div class="category-card__info">
+                      <div class="title title--5 title--font-helvetica title--dark-650 category-card__title category-card__title--sm">
+                        <a href="product-card.html">Древесные текстуры</a>
+                      </div>
+                      <div class="category-card__footer">
+                        <button class="btn btn--text-xs btn--py-sm btn--full category-card__btn js-open-popup" data-popup-name="callback">
+                          Рассчитать стоимость
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category-card catalog-menu__categories-item">
+                    <a class="category-card__img category-card__img--sm" href="product-card.html">
+                      <img src="assets/img/categories/5.jpg" alt="" />
+                    </a>
+                    <div class="category-card__info">
+                      <div class="title title--5 title--font-helvetica title--dark-650 category-card__title category-card__title--sm">
+                        <a href="product-card.html">Древесные текстуры</a>
+                      </div>
+                      <div class="category-card__footer">
+                        <button class="btn btn--text-xs btn--py-sm btn--full category-card__btn js-open-popup" data-popup-name="callback">
+                          Рассчитать стоимость
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="breadcrumbs main__breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__current" href="#">Блог</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blog main__content">
+        <div class="container">
+          <div class="blog__content">
+            <div class="title title--2 title--semibold title--upper title--line title--spacing-3 blog__title">Блог</div>
+            <div class="blog__tags">
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#все</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#каквыбрать</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#Замки</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#О дверях</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#Что делать, если</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#Что делать, если</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#Монтаж</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#Дизайн</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#инструкции</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#фурнитура</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#советы</a>
+              <a class="text text--xs text--medium text--font-inter blog__tag" href="#">#межкомнатные двери</a>
+            </div>
+            <div class="blog__filter-btns">
+              <div class="btn-filter blog__filter-btn">
+                <img class="btn-filter__icon" src="assets/img/icons/filter-new.svg" alt="" />
+                <span>Новые</span>
+              </div>
+              <div class="btn-filter btn-filter--border blog__filter-btn">
+                <img class="btn-filter__icon" src="assets/img/icons/filter-popular-dark-blue.svg" alt="" />
+                <span>Популярные</span>
+              </div>
+            </div>
+            <div class="blog__list">
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/1.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">Двери в тон стен: Плюсы и минусы</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">Двери в тон стен: Плюсы и минусы</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/2.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">Белая дверь в интерьере</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">Белая дверь в интерьере</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/1.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">В какое время лучше ставить входную дверь?</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">В какое время лучше ставить входную дверь?</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/3.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">Двустворчатые двери: за и против</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">Двустворчатые двери: за и против</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/1.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">В какое время лучше ставить входную дверь?</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">В какое время лучше ставить входную дверь?</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/1.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">Двери в тон стен: Плюсы и минусы</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">Двери в тон стен: Плюсы и минусы</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/1.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">Двери в тон стен: Плюсы и минусы</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">Двери в тон стен: Плюсы и минусы</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/2.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">Белая дверь в интерьере</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">Белая дверь в интерьере</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/4.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">Почему перекосило входную дверь?</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">Почему перекосило входную дверь?</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/3.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">Двустворчатые двери: за и против</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">Двустворчатые двери: за и против</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/1.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">Двери в тон стен: Плюсы и минусы</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">Двери в тон стен: Плюсы и минусы</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-card blog__item">
+                <div class="blog-card__img-box">
+                  <img class="blog-card__img" src="assets/img/blog/1.jpg" alt="" />
+                </div>
+                <a class="blog-card__main" href="article.html">
+                  <div class="title title--6 blog-card__title">Двери в тон стен: Плюсы и минусы</div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__meta">
+                    <div class="blog-card__tags">
+                      <div class="tag blog-card__tag">#О дверях</div>
+                      <div class="tag blog-card__tag">#Дизайн</div>
+                    </div>
+                    <span class="text text--xs text--white text--semibold blog-card__date">10.09.24</span>
+                  </div>
+                  <div class="title title--6 title--white title--lh-15 blog-card__info-title">
+                    <a href="article.html">Двери в тон стен: Плюсы и минусы</a>
+                  </div>
+                  <p class="text text--xs text--white blog-card__info-text">
+                    Угадать с погодой удается не всегда: обычно люди дожидаются выходных и приступают к постройке своего жилища. Но для
+                    входных дверей действительно важен температурный режим. Идеальным вариантом считается поздняя весна, ранняя осень или
+                    лето, когда за окном стабильно комфортно, а столбик термометра не опускается ниже +5 °C.
+                  </p>
+                  <div class="blog-card__info-footer">
+                    <div class="text text--iflex text--medium text--white blog-card__info-views">
+                      <img class="text__icon text__icon--mx-xs" src="assets/img/icons/eye-white.svg" alt="">
+                      <span>21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog__footer">
+              <a class="btn btn--border btn--py-sm btn--px-lg btn--text-sm" href="#">
+                Показать еще
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__info">
+            <a href="index.html" class="logo footer__logo">
+              <img class="logo__img" src="assets/img/logo.png" alt="" />
+            </a>
+            <div class="footer__contacts">
+              <div class="text text--iflex text--dark-700 text--line text--bold footer__address">
+                <img class="text__icon text__icon--mx-lg footer__address-icon" src="assets/img/icons/location.svg" alt="" />
+                <span>пр. Мангилик ел 40, офис 14</span>
+              </div>
+              <a class="link link--iflex link--bold footer__phone" href="tel:87777764000">
+                <img class="link__icon link__icon--mx-lg footer__phone-icon" src="assets/img/icons/phone.svg" alt="" />
+                <span>8 (777) 776 40 00</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?from=mapframe&amp;ll=71.436618%2C51.111729&amp;mode=search&amp;oid=190809329276&amp;ol=biz&amp;z=16.32"
+              width="560"
+              height="400"
+              frameborder="1"
+              allowfullscreen="true"></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__content">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item mobile-menu__item--has-children accordion">
+            <button class="link link--iflex link--lg link--bold mobile-menu__link mobile-menu__link--static accordion__btn">Каталог</button>
+            <div class="accordion__content">
+              <div class="accordion__main">
+                <div class="mobile-submenu mobile-menu__submenu">
+                  <div class="text text--iflex text--bold text--dark-700 mobile-submenu__title">
+                    <img class="text__icon mobile-submenu__title-icon" src="assets/img/catalog-menu/1.svg" alt="" />
+                    <span class="mobile-submenu__title-text">Двери</span>
+                  </div>
+                  <ul class="mobile-submenu__main">
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Входные двери</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Межкомнатные двери</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Раздвижные межкомнатные перегородки</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mobile-submenu mobile-menu__submenu">
+                  <div class="text text--iflex text--bold text--dark-700 mobile-submenu__title">
+                    <img class="text__icon mobile-submenu__title-icon" src="assets/img/catalog-menu/2.svg" alt="" />
+                    <span class="mobile-submenu__title-text">Окна</span>
+                  </div>
+                  <ul class="mobile-submenu__main">
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Деревянные окна</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Дерево-алюминиевые окна</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Зимние сады</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Раздвижные системы</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Стоечно-ригельная система</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mobile-submenu mobile-menu__submenu">
+                  <div class="text text--iflex text--bold text--dark-700 mobile-submenu__title">
+                    <img class="text__icon mobile-submenu__title-icon" src="assets/img/catalog-menu/3.svg" alt="" />
+                    <span class="mobile-submenu__title-text">Напольные покрытия</span>
+                  </div>
+                  <ul class="mobile-submenu__main">
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Паркет</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Террасная доска</a>
+                    </li>
+                    <li class="mobile-submenu__item"></li>
+                  </ul>
+                </div>
+                <div class="mobile-submenu mobile-menu__submenu">
+                  <div class="text text--iflex text--bold text--dark-700 mobile-submenu__title">
+                    <img class="text__icon mobile-submenu__title-icon" src="assets/img/catalog-menu/4.svg" alt="" />
+                    <span class="mobile-submenu__title-text">Столярные изделия</span>
+                  </div>
+                  <ul class="mobile-submenu__main">
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Кабинет</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Гостинная</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Спальня</a>
+                    </li>
+                    <li class="mobile-submenu__item">
+                      <a class="link link--sm mobile-submenu__link" href="catalog.html">Кухня</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mobile-menu__categories">
+                  <div class="text text--lg text--upper text--bold mobile-menu__categories-title">Популярные товары</div>
+                  <div class="mobile-menu__categories-list">
+                    <div class="category-card mobile-menu__categories-item">
+                      <a class="category-card__img category-card__img--sm" href="product-card.html">
+                        <img src="assets/img/categories/4.jpg" alt="" />
+                      </a>
+                      <div class="category-card__info">
+                        <div class="title title--5 title--font-helvetica title--dark-650 category-card__title category-card__title--sm">
+                          <a href="product-card.html">Древесные текстуры</a>
+                        </div>
+                        <div class="category-card__footer">
+                          <button class="btn btn--text-xs btn--py-sm btn--full category-card__btn js-open-popup" data-popup-name="callback">
+                            Рассчитать стоимость
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="category-card mobile-menu__categories-item">
+                      <a class="category-card__img category-card__img--sm" href="product-card.html">
+                        <img src="assets/img/categories/5.jpg" alt="" />
+                      </a>
+                      <div class="category-card__info">
+                        <div class="title title--5 title--font-helvetica title--dark-650 category-card__title category-card__title--sm">
+                          <a href="product-card.html">Древесные текстуры</a>
+                        </div>
+                        <div class="category-card__footer">
+                          <button class="btn btn--text-xs btn--py-sm btn--full category-card__btn js-open-popup" data-popup-name="callback">
+                            Рассчитать стоимость
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link link--iflex link--lg link--bold mobile-menu__link" href="#">О компании</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link link--iflex link--lg link--bold mobile-menu__link" href="index.html#calculate">Калькулятор цен</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link link--iflex link--lg link--bold mobile-menu__link" href="#footer">Контакты</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__footer">
+          <a class="link link--iflex link--bold mobile-menu__phone" href="tel:87777764000">
+            <img class="link__icon mobile-menu__phone-icon" src="assets/img/icons/phone.svg" alt="" />
+            <span>8 (777) 776 40 00</span>
+          </a>
+          <button class="btn btn--py-sm btn--px-xs btn--text-sm mobile-menu__btn js-open-popup" data-popup-name="callback">
+            Узнать стоимость
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cookie">
+      <div class="cookie__content">
+        <div class="text text--xl text--light cookie__text">Мы используем cookie-файлы</div>
+        <button class="btn btn--border cookie__btn">ок</button>
+      </div>
+    </div>
+
+    <div class="popup" data-name="callback">
+      <div class="popup__body">
+        <div class="popup__dialog">
+          <div class="popup__content">
+            <form class="callback-form popup__callback js-form" autocomplete="off" method="post">
+              <div class="callback-form__header">
+                <div class="title title--3 title--upper title--center callback-form__title">Оставить заявку</div>
+                <p class="text text--xl text--light text--center callback-form__text">Заполните форму и получите ваш расчет уже сегодня!</p>
+              </div>
+              <div class="callback-form__main callback-form__main--sm">
+                <div class="input callback-form__item">
+                  <div class="input__main">
+                    <input
+                      class="input__field input__field--round input__field--py-xl"
+                      type="text"
+                      placeholder="Как к вам обращаться?"
+                      name="name"
+                      data-validate="empty"
+                      data-label="город" />
+                  </div>
+                  <span class="input__error input__error--mt-sm"></span>
+                </div>
+                <div class="input callback-form__item">
+                  <div class="input__main">
+                    <input
+                      class="input__field input__field--round input__field--py-xl js-imask"
+                      type="text"
+                      placeholder="Телефон"
+                      name="phone"
+                      data-validate="phone"
+                      data-label="телефон"
+                      data-mask="+{7}(000)000-00-00" />
+                  </div>
+                  <span class="input__error input__error--mt-sm"></span>
+                </div>
+                <div class="select select--px-lg select--py-xl select--ph-dark select--round callback-form__item">
+                  <select class="select__field" data-validate="empty" data-label="тип изделия">
+                    <option value="">Выберите тип изделия</option>
+                    <option value="1">Двери</option>
+                    <option value="2">Окна</option>
+                    <option value="3">Напольные покрытия</option>
+                    <option value="4">Столярные изделия</option>
+                  </select>
+                  <div class="select__error"></div>
+                </div>
+                <button class="btn btn--full btn--regular btn--py-xl btn--radius-sm btn--text-black callback-form__btn js-form-submit">
+                  Получить расчет стоимости
+                </button>
+              </div>
+            </form>
+            <button class="popup__close">
+              <img src="assets/img/icons/exit-bold-black.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

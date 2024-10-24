@@ -6,7 +6,7 @@ $accordions.forEach(($accordion) => {
   const delay = $accordion.dataset.accordionDelay || 500;
   let animated = false;
 
-  $content.style.transition = `height ${delay / 1000}s, transform ${delay / 60}s`;
+  $content.style.transition = `height ${delay / 1000}s`;
 
   $btn.addEventListener("click", () => {
     if (animated) {
@@ -18,7 +18,7 @@ $accordions.forEach(($accordion) => {
     if (!$accordion.classList.contains("accordion--active")) {
       $btn.classList.add("accordion__btn--active");
       $accordion.classList.add("accordion--activating");
-      setTimeout(() => $content.style.height = `${$main.getBoundingClientRect().height}px`, 50);
+      $content.style.height = `${$main.getBoundingClientRect().height}px`;
     } else {
       $btn.classList.remove("accordion__btn--active");
       $content.style.height = `${$content.scrollHeight}px`;

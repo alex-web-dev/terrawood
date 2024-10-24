@@ -1,0 +1,26 @@
+.article-content {
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    padding-left: 10px;
+    display: flex;
+    align-items: flex-start;
+
+    &:before {
+      content: '';
+      margin-top: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: @color-primary;
+      border-radius: 50%;
+    }    
+
+    &:not(:first-child) {
+      margin-top: 5px;
+    }
+  }
+}

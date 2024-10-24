@@ -20,3 +20,4 @@ import './works.js';
 import './partners.js';
 import './catalog-sidebar.js';
 import './product.js';
+import './blog.js';

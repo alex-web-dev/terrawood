@@ -51,10 +51,15 @@ export function unlockBody(absoluteElems) {
   $absoluteElems.forEach(($elem) => ($elem.style.paddingRight = ""));
 }
 
+export function isMobileDevice() {
+  return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
 export default {
   createElem,
   moveElement,
   getScrollbarWidth,
   lockBody,
   unlockBody,
+  isMobileDevice,
 };

@@ -22,7 +22,7 @@
 
   &__icon {
     flex: 0 0 auto;
-    
+
     &:first-child:not(:last-child) {
       margin-right: 10px;
     }
@@ -41,7 +41,18 @@
       }
     }
   }
-  
+
+  &--border {
+    border-color: @color-primary;
+    background-color: transparent;
+    color: @color-primary;
+
+    &:hover {
+      background-color: @color-primary;
+      color: #fff;
+    }
+  }
+
   &--border-light {
     border-color: @color-primary-light;
     background-color: transparent;
@@ -50,7 +61,6 @@
       background-color: @color-primary-light;
     }
   }
-
 
   &--border-white {
     border-color: #fff;
@@ -90,6 +100,11 @@
     padding-right: 15px;
   }
 
+  &--px-lg {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
   &--radius-sm {
     border-radius: 20px;
   }
@@ -123,6 +138,11 @@
     &--py-xl {
       padding-top: 18px;
       padding-bottom: 18px;
+    }
+
+    &--px-lg {
+      padding-left: 32px;
+      padding-right: 32px;
     }
   }
 }

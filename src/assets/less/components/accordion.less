@@ -4,15 +4,16 @@
 }
 
 .accordion__content {
-  display: none;
-}
-
-.accordion--activating .accordion__content {
   height: 0;
-  display: block;
+  visibility: hidden;
   overflow: hidden;
 }
 
+.accordion--activating .accordion__content {
+  visibility: visible;
+}
+
 .accordion--active .accordion__content {
-  display: block;
+  height: auto;
+  visibility: visible;
 }

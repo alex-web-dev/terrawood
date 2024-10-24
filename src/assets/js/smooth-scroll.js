@@ -14,7 +14,11 @@ $anchors.forEach($anchor => {
 
     const $elem = document.querySelector(id);
     if ($elem) {
-      const offsetTop = $elem.getBoundingClientRect().top - headerHeight;
+      let offsetTop = $elem.getBoundingClientRect().top;
+      if (window.innerWidth <= 1090) {
+        offsetTop -= headerHeight;
+      }
+
       window.scrollBy({ top: (offsetTop), left: 0, behavior: 'smooth' });
     }
   });
